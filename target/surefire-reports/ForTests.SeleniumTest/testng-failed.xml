@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [ForTests.SeleniumTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="ForTests.SeleniumTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="CreateContactWithoutAllField"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ForTests.SeleniumTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [ForTests.SeleniumTest] -->

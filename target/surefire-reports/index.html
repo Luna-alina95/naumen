@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-ForTests.SeleniumTest">
+              <span class="suite-name border-failed">ForTests.SeleniumTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-ForTests.SeleniumTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-ForTests.SeleniumTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-ForTests.SeleniumTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-ForTests.SeleniumTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-ForTests.SeleniumTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-ForTests.SeleniumTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-ForTests.SeleniumTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ForTests.SeleniumTest" class="hide-methods failed suite-ForTests.SeleniumTest"> (hide)</a> <!-- hide-methods failed suite-ForTests.SeleniumTest -->
+                      <a href="#" panel-name="suite-ForTests.SeleniumTest" class="show-methods failed suite-ForTests.SeleniumTest"> (show)</a> <!-- show-methods failed suite-ForTests.SeleniumTest -->
+                    </span>
+                    <div class="method-list-content failed suite-ForTests.SeleniumTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="CreateContactWithoutAllField">CreateContactWithoutAllField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ForTests.SeleniumTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ForTests.SeleniumTest" class="hide-methods passed suite-ForTests.SeleniumTest"> (hide)</a> <!-- hide-methods passed suite-ForTests.SeleniumTest -->
+                      <a href="#" panel-name="suite-ForTests.SeleniumTest" class="show-methods passed suite-ForTests.SeleniumTest"> (show)</a> <!-- show-methods passed suite-ForTests.SeleniumTest -->
+                    </span>
+                    <div class="method-list-content passed suite-ForTests.SeleniumTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="CheckDisabledNextPage">CheckDisabledNextPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="CheckDisabledPreviousPage">CheckDisabledPreviousPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="CheckNotDisabledNextPage">CheckNotDisabledNextPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="CheckNotDisabledPreviousPage">CheckNotDisabledPreviousPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="CreateContact">CreateContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="CreateContactWithoutBirthday">CreateContactWithoutBirthday</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="changeAddress">changeAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="changeBirthday">changeBirthday</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="changeBirthdayFalseMonth">changeBirthdayFalseMonth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ForTests.SeleniumTest" title="ForTests.SeleniumTest" hash-for-method="changeName">changeName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ForTests.SeleniumTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ForTests.SeleniumTest" class="panel ForTests.SeleniumTest">
+          <div class="suite-ForTests.SeleniumTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ForTests.SeleniumTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateContactWithoutAllField">
+                  </a> <!-- CreateContactWithoutAllField -->
+                  <span class="method-name">CreateContactWithoutAllField</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [252] but found [251]
+	at ForTests.SeleniumTest.CreateContactWithoutAllField(SeleniumTest.java:261)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ForTests.SeleniumTest-class-failed -->
+          <div class="suite-ForTests.SeleniumTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ForTests.SeleniumTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckDisabledNextPage">
+                  </a> <!-- CheckDisabledNextPage -->
+                  <span class="method-name">CheckDisabledNextPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckDisabledPreviousPage">
+                  </a> <!-- CheckDisabledPreviousPage -->
+                  <span class="method-name">CheckDisabledPreviousPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckNotDisabledNextPage">
+                  </a> <!-- CheckNotDisabledNextPage -->
+                  <span class="method-name">CheckNotDisabledNextPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckNotDisabledPreviousPage">
+                  </a> <!-- CheckNotDisabledPreviousPage -->
+                  <span class="method-name">CheckNotDisabledPreviousPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateContact">
+                  </a> <!-- CreateContact -->
+                  <span class="method-name">CreateContact</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateContactWithoutBirthday">
+                  </a> <!-- CreateContactWithoutBirthday -->
+                  <span class="method-name">CreateContactWithoutBirthday</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeAddress">
+                  </a> <!-- changeAddress -->
+                  <span class="method-name">changeAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeBirthday">
+                  </a> <!-- changeBirthday -->
+                  <span class="method-name">changeBirthday</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeBirthdayFalseMonth">
+                  </a> <!-- changeBirthdayFalseMonth -->
+                  <span class="method-name">changeBirthdayFalseMonth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeName">
+                  </a> <!-- changeName -->
+                  <span class="method-name">changeName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ForTests.SeleniumTest-class-passed -->
+        </div> <!-- panel ForTests.SeleniumTest -->
+        <div panel-name="test-xml-ForTests.SeleniumTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;ForTests.SeleniumTest&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ForTests.SeleniumTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- ForTests.SeleniumTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ForTests.SeleniumTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ForTests.SeleniumTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ForTests.SeleniumTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ForTests.SeleniumTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ForTests.SeleniumTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ForTests.SeleniumTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ForTests.SeleniumTest');
+function tableData_ForTests.SeleniumTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'changeBirthdayFalseMonth')
+data.setCell(0, 2, 'ForTests.SeleniumTest')
+data.setCell(0, 3, 13635);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CheckDisabledNextPage')
+data.setCell(1, 2, 'ForTests.SeleniumTest')
+data.setCell(1, 3, 9184);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'changeBirthday')
+data.setCell(2, 2, 'ForTests.SeleniumTest')
+data.setCell(2, 3, 4800);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CreateContact')
+data.setCell(3, 2, 'ForTests.SeleniumTest')
+data.setCell(3, 3, 3254);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'changeName')
+data.setCell(4, 2, 'ForTests.SeleniumTest')
+data.setCell(4, 3, 3068);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CreateContactWithoutAllField')
+data.setCell(5, 2, 'ForTests.SeleniumTest')
+data.setCell(5, 3, 2454);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'changeAddress')
+data.setCell(6, 2, 'ForTests.SeleniumTest')
+data.setCell(6, 3, 2012);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'CreateContactWithoutBirthday')
+data.setCell(7, 2, 'ForTests.SeleniumTest')
+data.setCell(7, 3, 1814);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'CheckDisabledPreviousPage')
+data.setCell(8, 2, 'ForTests.SeleniumTest')
+data.setCell(8, 3, 1306);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'CheckNotDisabledPreviousPage')
+data.setCell(9, 2, 'ForTests.SeleniumTest')
+data.setCell(9, 3, 847);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'CheckNotDisabledNextPage')
+data.setCell(10, 2, 'ForTests.SeleniumTest')
+data.setCell(10, 3, 615);
+window.suiteTableData['ForTests.SeleniumTest']= { tableData: data, tableDiv: 'times-div-ForTests.SeleniumTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <div id="times-div-ForTests.SeleniumTest">
+              </div> <!-- times-div-ForTests.SeleniumTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ForTests.SeleniumTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ForTests.SeleniumTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ForTests.SeleniumTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ForTests.SeleniumTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ForTests.SeleniumTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">CheckDisabledNextPage</span>
+                <span class="method-start">24612 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckDisabledPreviousPage</span>
+                <span class="method-start">33797 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckNotDisabledNextPage</span>
+                <span class="method-start">35110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckNotDisabledPreviousPage</span>
+                <span class="method-start">35725 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CreateContact</span>
+                <span class="method-start">36573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CreateContactWithoutAllField</span>
+                <span class="method-start">39828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CreateContactWithoutBirthday</span>
+                <span class="method-start">42286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeAddress</span>
+                <span class="method-start">44101 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeBirthday</span>
+                <span class="method-start">46114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeBirthdayFalseMonth</span>
+                <span class="method-start">50914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">changeName</span>
+                <span class="method-start">64550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67618 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

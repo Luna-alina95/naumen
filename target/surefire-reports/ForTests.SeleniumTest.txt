@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: ForTests.SeleniumTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 73.116 sec <<< FAILURE!
+CreateContactWithoutAllField(ForTests.SeleniumTest)  Time elapsed: 2.459 sec  <<< FAILURE!
+java.lang.AssertionError: expected [252] but found [251]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:372)
+	at org.testng.Assert.assertEquals(Assert.java:382)
+	at ForTests.SeleniumTest.CreateContactWithoutAllField(SeleniumTest.java:261)
+
